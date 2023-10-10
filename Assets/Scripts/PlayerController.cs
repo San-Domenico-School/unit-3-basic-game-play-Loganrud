@@ -5,35 +5,49 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private GameObject projectilel;
-    private float speed;
+    [SerializeField] private GameObject projectile;
+    private float speed = 30f;
     private float centerToEdge;
     private float move;
         
     // Start is called before the first frame update
      private void Start()
     {
-        // To be implemented
+        centerToEdge = 24f;
     }
 
-    // Update is called once per frame
+    // Calls PlayerMovement method each frame
     private void Update()
     {
-        // To be implemented
+        PlayerMovement();
     }
 
     private void PlayerMovement()
     {
-        // To be implemented
+        transform.Translate(Vector3.right * Time.deltaTime * speed * move);
+
+        if (Mathf.Abs(transform.position.x) > centerToEdge)
+        {
+            float edge = centerToEdge;
+            if(transform.position.x < 0f)
+            {
+                edge = -centerToEdge;
+            }
+            transform.position = new Vector3(edge, transform.position.y, transform.position.z);
+        }
+        
     }
 
+    // Sets the move field to 1 or -1 besed on the x-value of the input's Vector 2
     private void OnMove(InputValue input)
     {
-        // To be implemented
+        Vector2 moveDirection = input.Get<Vector2>();
+        move = moveDirection.x;
+        Debug.Log(move);
     }
 
     private void OnFire()
     {
-        // To be implemented
+        Instantiate(projectile, transform.position + Vector3.up, projectile.transform.rotation);
     }
 }
