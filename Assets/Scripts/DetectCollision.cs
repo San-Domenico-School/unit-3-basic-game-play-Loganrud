@@ -6,7 +6,8 @@ public class DetectCollision : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        // To be implemented
+        Destroy(other.gameObject);
+        Destroy(gameObject);
     }
 }
 

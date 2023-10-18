@@ -49,5 +49,6 @@ public class PlayerController : MonoBehaviour
     private void OnFire()
     {
         Instantiate(projectile, transform.position + Vector3.up, projectile.transform.rotation);
+        Debug.Log("Fire");
     }
 }

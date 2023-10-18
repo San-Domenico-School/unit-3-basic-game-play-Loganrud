@@ -106,6 +106,8 @@ GameObject:
   - component: {fileID: 2983788697131006864}
   - component: {fileID: 1144507643733155066}
   - component: {fileID: 3719979029653391676}
+  - component: {fileID: 7952788089702780066}
+  - component: {fileID: -172140622984243773}
   m_Layer: 0
   m_Name: Animal_Chick
   m_TagString: Untagged
@@ -121,14 +123,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4769538643607761896}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -4.03, y: 0, z: 10.12}
-  m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
+  m_LocalPosition: {x: -4.0302, y: -0.47527, z: 10.16}
+  m_LocalScale: {x: 0.24898566, y: 0.24898566, z: 0.24898566}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 589373316216263953}
   - {fileID: 9214191569863640061}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2983788697131006864
 Animator:
@@ -185,6 +187,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9.4
+--- !u!114 &7952788089702780066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4769538643607761896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b015de89572948aca3a8aa16b3a5f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-172140622984243773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4769538643607761896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f2f548725ee48608afb92f82fa46ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4827863436127514770
 GameObject:
   m_ObjectHideFlags: 0

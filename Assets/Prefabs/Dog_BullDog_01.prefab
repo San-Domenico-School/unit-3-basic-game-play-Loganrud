@@ -6100,6 +6100,8 @@ GameObject:
   - component: {fileID: 2693890186678602198}
   - component: {fileID: 4520677388562740816}
   - component: {fileID: 1052121685765306197}
+  - component: {fileID: -1148694581857227516}
+  - component: {fileID: -7860690956543441040}
   m_Layer: 0
   m_Name: Dog_BullDog_01
   m_TagString: Untagged
@@ -6115,8 +6117,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9173990608847293361}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 8.1, y: 0, z: 18.51}
-  m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
+  m_LocalPosition: {x: 8.1, y: -0.38485, z: 18.64}
+  m_LocalScale: {x: 10.2921, y: 10.2921, z: 10.2921}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3953794409540328161}
@@ -6157,7 +6159,7 @@ Transform:
   - {fileID: 9059568557071572813}
   - {fileID: 1062446321053834510}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2693890186678602198
 Animator:
@@ -6214,3 +6216,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.10956945, y: 0.18956754, z: 0.2466006}
   m_Center: {x: -0.0013252635, y: 0.09436958, z: 0.033775516}
+--- !u!114 &-1148694581857227516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173990608847293361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b015de89572948aca3a8aa16b3a5f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7860690956543441040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173990608847293361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f2f548725ee48608afb92f82fa46ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
